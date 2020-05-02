@@ -1,13 +1,13 @@
 a {
-	color: #2e4053;
-	text-decoration: none;
+  color: #2e4053;
+  text-decoration: none;
 }
 a.btn, .tag-cloud a {
-	background-color: #2e4053;
+  background-color: #2e4053;
 }
 main article div a,
 main article p a {
-	border-bottom: 1px solid #7199e8;
+  border-bottom: 1px solid #7199e8;
 }
 aside {
     background-color: #2e4053;
@@ -30,19 +30,19 @@ https://www.h3xed.com/web-development/how-to-make-a-responsive-100-width-youtube
 }
 
 .profile_pic {
-	float: left;
-	margin: 0 20px 20px 0;
-	border: 1px solid #ddd;
-	padding: 8px;
-	border-radius: 5px;
+  float: left;
+  margin: 0 20px 20px 0;
+  border: 1px solid #ddd;
+  padding: 8px;
+  border-radius: 5px;
 }
 
 aside nav ul li {
-	text-transform: capitalize;
+  text-transform: capitalize;
 }
 
 .theme-logo {
-	float: right;
+  float: right;
 }
 
 
@@ -92,19 +92,19 @@ aside.yellow #mc-dark .mc-field-group p a:hover {
   background-color: #2e4053;
 }
 .red {
-	background-color: #a41d1d;
+  background-color: #a41d1d;
 }
 .green {
-	background-color: #1da249;
+  background-color: #1da249;
 }
 .blue {
-	background-color: #1d49a2;
+  background-color: #1d49a2;
 }
 .purple {
   background-color: #771da4;
 }
 .brown {
-	background-color: #a0511c;
+  background-color: #a0511c;
 }
 .yellow {
   background-color: #ffce3e;
@@ -116,10 +116,10 @@ aside.yellow a {
 }
 
 .projectHeader {
-	background-color: #ffffe0;
-	padding: 5px;
-	margin-top: 40px;
-	border-bottom: 1px solid #ddd;
+  background-color: #ffffe0;
+  padding: 5px;
+  margin-top: 40px;
+  border-bottom: 1px solid #ddd;
 }
 
 /* articles search */
@@ -172,7 +172,7 @@ aside.yellow a {
   right: -40px;
 }
 img.border {
-	border: 1px solid #ddd;
+  border: 1px solid #ddd;
 }
 
 #instantPreviewRight {

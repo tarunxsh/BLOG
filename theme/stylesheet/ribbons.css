@@ -6,7 +6,7 @@ body{
 
 .ribbon{
   position: fixed; 
-  top: 42px;
+  bottom: 42px;
   width: 200px;
   padding: 1px 0;
   background: #000;
@@ -19,20 +19,20 @@ body{
 
 .ribbon.left{
   left: -42px;
-  -moz-transform: rotate(-45deg);
-  -webkit-transform: rotate(-45deg);
-  -o-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
-
-.ribbon.right{
-  right: -42px;
   -moz-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+.ribbon.right{
+  right: -42px;
+  -moz-transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 .ribbon a, 

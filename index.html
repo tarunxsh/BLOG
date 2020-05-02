@@ -2,14 +2,30 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
-  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Do+Hyeon|Hanalei+Fill" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="theme/stylesheet/style.min.css">
+
+  <!-- source sans for article descp -->
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+
+  <!-- do hyeon for nav bars hanalei for Article header -->
+  <link href="https://fonts.googleapis.com/css?family=Do+Hyeon|Hanalei+Fill" rel="stylesheet">
+  <!-- osswald for logo and articl title -->
+  <link href="https://fonts.googleapis.com/css?family=Oswald:700&display=swap" rel="stylesheet">
+  <!-- rajdhano for author name and time and date -->
+  <link href="https://fonts.googleapis.com/css?family=Rajdhani:300&display=swap" rel="stylesheet">
+  
 
   <link rel="stylesheet" type="text/css" href="theme/stylesheet/ribbons.css">
-  <link rel="stylesheet" type="text/css" href="theme/stylesheet/custom.css">
+  <!-- <link rel="stylesheet" type="text/css" href="theme/stylesheet/custom.css"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" type="text/css" href="theme/stylesheet/style.min.css"> -->
+  <link rel="stylesheet" href="theme/stylesheet/main.css">
+  
 
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
     <link rel="icon" href="icon.png" type="image/x-icon">
 
   <meta charset="utf-8" />
@@ -26,33 +42,74 @@
 </head>
 <body>
 
+  
   <!-- change ribbon color based on topic -->
-  <div class="ribbon right
-      blue
-  ">
+  <div class="ribbon right blue">
     <a href="https://facebook.com" target="_blank"><strong>Get In Touch</strong></a>
   </div>
 
-  <!-- change aside color based on topic -->
-    <aside class='blue' style="background-color: #388E3C;">
-        <img class="profile" src="avatar.png">
-    <div style="font-family: 'Do Hyeon', sans-serif;">
-      <h1 style="font-family: 'Abril Fatface', cursive;"><a href="">//Tech_Blog </a></h1>
 
-<p>Articles and News - One Bite a Day</p>
+
+  
+
+  <!-- change aside color based on topic -->
+    <aside>
+    <div id ="logo" style="font-family: 'Do Hyeon', sans-serif;">
+      <h1 style="font-family: 'Oswald', sans-serif; font-size: 70px;"><a href="">thatEEguy</a></h1>
+    </div>
+<div id="sidenav">
+<p>Articles and Facts</p>
       <nav>
         <ul class="list">
-          <li><a href="about.html">About</a></li>
           <li><a href="index.html">Articles</a></li>
+          <li><a href="about.html">Notes</a></li>
+          <li><a href="about.html">About</a></li>
         </ul>
+
       </nav>
     </div>
 
 
+
   </aside>
+  
+
+
   <main>
 
+<!--*********************************************NAVBAR*************************************************************-->
 
+
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+  <div class="navbar-brand">
+  <div class=" dropdown nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</div>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+    </div>    
+       
+  <a href="#" class="badge badge-warning">Admin Login</a>
+  <a class="nav-link" href="#">New Post</a>
+     
+    <ul class="navbar-nav ml-auto">
+
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Log Out</a>
+      </li>
+     
+    </ul>
+  </div>
+</nav>
+
+<!--**********************************************************************************************************-->
+
+<br><br>
 <article class="single" style="font-family: 'Do Hyeon', sans-serif;">
   <header>
     <h1>Articles</h1>
@@ -60,37 +117,40 @@
 
   <p>Below is a listing of our articles. Every week we share our learning. If you have anything you struggle with in suggestions or ideas for topics please do <a href='https://facebook.com' target="_blank">Get In Touch</a> ...</p>
 
+
   <br>
-  <input type="text" id="search" onkeyup="filterList()" placeholder="Search Articles .." title="What do you like to learn about?"<>
+  <input class="mr-sm-2" type="text" id="search" onkeyup="filterList()" placeholder="Search Articles .." title="What do you like to learn about?">
+  <br><br>
   <ul id='articleList' class='articleList'>
 
 
-    <li><a href="articles/a1webd.html">The absolute beginner’s guide to learning web development in 2018</a><br><p>You’ve probably already tried looking on Google for how to learn, and there are a lot of resources out there. But many of them include way too much information<a href="articles/a1webd.html"><strong> read more...</strong></a></p></li>
+    <li><a id="blog" href="articles/a1webd.html">The absolute beginner’s guide to learning web development in 2018</a><br><p>You’ve probably already tried looking on Google for how to learn, and there are a lot of resources out there. But many of them include way too much information<a href="articles/a1webd.html"><strong> read more...</strong></a></p><h6>tarunesh1234</h6><h6 id='time'>Aug. 24</h6></li>
 
 
-    <li><a href="articles/a2updated.html">Top 10 Tech Websites To Stay Updated in 2018</a><br><p>Technology played a crucial role in revolutionizing the world. Every day a huge number of technological products are launched in the market. Due to the rapidly growing nature of the tech industry, it is necessary to stay<a href="articles/a2updated.html"><strong> read more...</strong></a></p></li>
+    <li><a id="blog" href="soon/soon.html">Top 10 Tech Websites To Stay Updated in 2018</a><br><p>Technology played a crucial role in revolutionizing the world. Every day a huge number of technological products are launched in the market. Due to the rapidly growing nature of the tech industry, it is necessary to stay<a href="articles/a2updated.html"><strong> read more...</strong></a></p><h6>tarunesh1234</h6><h6>Aug. 24</h6></li>
 
 
-    <li><a href="https://medium.com/dreidev/web-scraping-in-python-e07fba0a1663">Web scraping</a><br><p>bookmarked--article</p></li>
+    <li><a id="blog" href="soon/soon.html">Web scraping</a><br><p>bookmarked--article</p><h6>tarunesh1234</h6><h6 id='time'>Aug. 24</h6></li>
 
 
-    <li><a href="articles/a4wparty.html">Watch Party-what the hell is this??</a><br><p>Facebook has launched a new feature called ‘Watch Party’ to all Facebook Groups around the globe and will be available  across mobile and desktop platform. This new feature allows members of the Facebook groups to join in and watch videos on the social network platform together in real time<a href="articles/a4wparty.html"><strong>  read more...</strong></a></p></li>
+    <li><a id="blog" href="soon/soon.html">Watch Party-what the hell is this??</a><br><p>Facebook has launched a new feature called ‘Watch Party’ to all Facebook Groups around the globe and will be available  across mobile and desktop platform. This new feature allows members of the Facebook groups to join in and watch videos on the social network platform together in real time<a href="articles/a4wparty.html"><strong>  read more...</strong></a></p><h6>tarunesh1234</h6><h6 id='time'>Aug. 24</h6></li>
     
 
-    <li><a href="articles/a5stab.html">Samsung Galaxy Tab S4 Android Tablet</a><br><p>In the last couple of months, we are seeing several leaks about the upcoming Galaxy Note 9 and Galaxy Tab S4. Samsung has already confirmed to launch the Galaxy Note 9 at the Unpacked event scheduled on August 9th in New York<a href="articles/a5stab.html"><strong> read more...</strong></a></p></li>
+    <li><a id="blog" href="soon/soon.html">Samsung Galaxy Tab S4 Android Tablet</a><br><p>In the last couple of months, we are seeing several leaks about the upcoming Galaxy Note 9 and Galaxy Tab S4. Samsung has already confirmed to launch the Galaxy Note 9 at the Unpacked event scheduled on August 9th in New York<a href="articles/a5stab.html"><strong> read more...</strong></a></p><h6>tarunesh1234</h6><h6 id='time'>Aug. 24</h6></li>
     
 
-    <li><a href="articles/a6nielit.html">NEILIT</a><br><p>National Institute of Electronics & Information Technology (NIELIT),(erstwhile DOEACC Society), an Autonomous Scientific Society under the administrative control of Ministry of Electronics & Information Technology (MoE&IT)<a href="articles/a6nielit.html"><strong> read more...</strong></a></p></li>
+    <li><a id="blog" href="soon/soon.html">NEILIT</a><br><p>National Institute of Electronics & Information Technology (NIELIT),(erstwhile DOEACC Society), an Autonomous Scientific Society under the administrative control of Ministry of Electronics & Information Technology (MoE&IT)<a href="articles/a6nielit.html"><strong> read more...</strong></a></p><h6>tarunesh1234</h6><h6 id='time'>Aug. 24</h6></li>
     
 
-    <li><a href="soon/soon.html">10 Best Earphones Under 1000 INR You Can Buy</a><br><p>Buying a pair of budget earphones is hard. There are just so many offerings available in the market that your head starts spinning when you don’t know what exactly you are looking for. This is a classic example of how having <a href="../..soon/index.html"><strong>read more...</strong></a></p></li>
+    <li><a id="blog" href="soon/soon.html">10 Best Earphones Under 1000 INR You Can Buy</a><br><p>Buying a pair of budget earphones is hard. There are just so many offerings available in the market that your head starts spinning when you don’t know what exactly you are looking for. This is a classic example of how having <a href="../..soon/index.html"><strong>read more...</strong></a></p><h6>tarunesh1234</h6><h6 id='time'>Aug. 24</h6></li>
       		
   </ul>
+
 </article>
 
     <footer>
-      <p>&copy; NIELIT </p>
-      <p>Made with &hearts; by Tarunesh and Prerit </p>
+      <p>&copy; Tarunesh Kumar Gautam </p>
+      <p>Made with &hearts; by Tarunesh</p>
     </footer>
 </main>
   	<!-- search input field or archive pages -->

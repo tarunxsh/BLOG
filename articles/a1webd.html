@@ -2,12 +2,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Do+Hyeon|Hanalei+Fill" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Oswald:700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="../theme/stylesheet/style.min.css">
- <link rel="stylesheet" type="text/css" href="../theme/stylesheet/ribbons.css">
-  <link rel="stylesheet" type="text/css" href="../theme/stylesheet/custom.css">
+  <link href="https://fonts.googleapis.com/css?family=Rajdhani:300&display=swap" rel="stylesheet">
+  
+
+  <link rel="stylesheet" type="text/css" href="../theme/stylesheet/ribbons.css">
+  <!-- <link rel="stylesheet" type="text/css" href="theme/stylesheet/custom.css"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- <link rel="stylesheet" type="text/css" href="theme/stylesheet/style.min.css"> -->
+  <link rel="stylesheet" href="../theme/stylesheet/main.css">
+  
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  
 
    <link rel="icon" href="icon.png" type="image/x-icon">
 
@@ -24,32 +37,68 @@
 <body>
 
   <!-- change ribbon color based on topic -->
-  <div class="ribbon right
-      blue
-  ">
+  <div class="ribbon left blue">
     <a href="https://facebook.com" target="_blank"><strong>Get In Touch</strong></a>
   </div>
 
   <!-- change aside color based on topic -->
-    <aside class='blue' style="background-color: #388E3C;">
-        <img class="profile" src="../avatar.png">
+    <aside>
+        <div><img class="profile" src="../avatar.gif"></div>
     <div style="font-family: 'Do Hyeon', sans-serif;">
-      <h1 style="font-family: 'Abril Fatface', cursive;"><a href="">//Tech_blog</a></h1>
+      <h1 style="font-family: 'Oswald', sans-serif; font-size: 70px;"><a href="">thatEEguy</a></h1>
 
-<p>Articles and News - One Bite a Day</p>
+<p>Articles and Facts</p>
       <nav>
         <ul class="list">
-          <li><a href="../about.html">About</a></li>
-          <li><a href="../index.html">Articles</a></li>
+          <li><a href="index.html">Articles</a></li>
+          <li><a href="about.html">Notes</a></li>
+          <li><a href="about.html">About</a></li>
         </ul>
+
       </nav>
     </div>
 
 
+
   </aside>
+  
+
+
   <main>
 
+<!--*********************************************NAVBAR*************************************************************-->
 
+
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+  <div class="navbar-brand">
+  <div class=" dropdown nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</div>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+    </div>    
+       
+  <a href="#" class="badge badge-warning">Admin Login</a>
+  <a class="nav-link" href="#">New Post</a>
+     
+    <ul class="navbar-nav ml-auto">
+
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Log Out</a>
+      </li>
+     
+    </ul>
+  </div>
+</nav>
+
+<!--**********************************************************************************************************-->
+
+<br><br>
     <article class="single">
   <header>
     <h1>The absolute beginner’s guide to learning web development in 2018</h1>
@@ -57,7 +106,13 @@
           Posted by Team on 29 July 2018 in 
 
 
-        &#8226; 33 min read
+        &#8226; 33 min read <br>
+        <a href="/vn"><button class="btn btn-primary" type="submit">Button</button></a>
+        <input class="btn btn-primary" type="button" value="Input">
+        <input class="btn btn-primary" type="submit" value="Submit">
+        <input class="btn btn-primary" type="reset" value="Reset">
+        <button type="button" class="btn btn-success">tarunesh1234</button>
+        <button type="button" class="btn btn-danger">Danger</button>
     </p>
     <img src="a1.1.png">
   </header>
